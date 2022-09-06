@@ -1,0 +1,315 @@
+
+	/*	1- css geral das paginas
+		2- css do topNav (menu superior presente em todas as paginas)
+		3- css dos botões
+		4- css do formulário de cadastro e login
+	*/
+
+	/*geral*/
+
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		font-family: Arial, Helvetica,sans-serif;
+		margin: 0px;
+		padding: 0px;
+		background-image: linear-gradient( 109.6deg,  #0E0B16 10%, #4717F6 90% );
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+	header {
+		text-align: center;;
+		font-size: 55px;
+		height: 600px;
+		color: white;
+		width: 100%;
+	}
+
+	h1 {
+		margin: 0px;
+		line-height: 350%;
+		font: elephant;
+	}
+
+	article {
+		float: left;
+		font: calibri;
+		font-size: 20px;
+		padding: 20px;
+		color: black;
+		width: 95%;
+	}
+
+	input {
+		border-radius: 4px;
+		border: 1.5px solid gray;
+		height: 30px;
+		width: 40%;
+	}
+
+	section {
+		height: auto;
+		font-size: 20px;
+		padding: 20px;
+		width: auto;
+		height: auto;
+		background-color: lightgray;
+	}
+
+	footer {
+		background-color: black;
+		color: white;
+		text-align: center;
+		font-size: 20px;
+		min-height: 550px;
+		height: auto;
+		margin: 0px;
+		padding: 10px;
+	}
+
+	/*Layout responsivo - faz as duas colunas  se empilharem umas sobre as outras, 
+	em vez de ficarem próximas umas das outras, em telas pequenas */
+	@media (max-width: 600px) {
+		section, article {
+		width: 100%;
+		height: auto;
+		}
+	}
+
+	/* navBar */
+
+	nav {
+		font-size: 20px;
+		width: 100%;
+		height: auto;
+	}
+	ul.topnav {
+		list-style-type: none;
+		top: 0;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: rgb(40,40,150);
+		position: fixed;
+		width: 100%;
+		position: -webkit-sticky;
+	}
+
+	ul.topnav li {
+		float: left;
+	}
+
+	ul.topnav a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 20px 16px;
+		text-decoration: none;
+	}
+
+	ul.topnav li a:hover:not(.active) {
+		background-color: lightblue;
+	}
+
+	ul.topnav li a.active {
+		background-color: rgb( 30, 30, 255);
+	}
+
+	ul.topnav li.right {
+		float: right;
+	}
+
+	@media screen and (max-height: 600px) {
+		ul.topnav li.right,
+		ul.topnav li {
+			float: none;
+		}
+	}
+
+
+	/* botão do index*/
+
+	.button-iniciar {
+		align-items: center;
+		background-clip: padding-box;
+		background-color: #407d17;
+		border: 1px solid transparent;
+		border-radius: 20rem;
+		box-shadow: rgba(0, 0, 0, 0.02) 0 2px 4px 0;
+		box-sizing: border-box;
+		color: white;
+		display: inline-flex;
+		font-family: -apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size: 30px;
+		font-weight: 600;
+		justify-content: center;
+		line-height: 1.25;
+		margin: 0;
+		min-height: 3rem;
+		padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+		position: relative;
+		text-decoration: none;
+		transition: all 300ms;
+		user-select: none;
+		-webkit-user-select: none;
+		touch-action: manipulation;
+		vertical-align: baseline;
+		height: 50px;
+		width: auto;
+	}
+
+	.button-iniciar a {
+		color: white;
+		text-decoration: none;
+	}
+
+	.button-iniciar:hover {
+		background-color: #31b424;
+		box-shadow: green;
+		transform: translateY(-5px);
+	}
+
+	.button-iniciar:active {
+		background-color: darkgreen;
+		box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+		transform: translateY(0);
+	}
+
+	/*form de login e cadastro*/
+
+	#form1 {
+		color: black;
+		display: flex;
+		height: 60vh;
+		width: 50vw;
+		min-height: 530px;
+		max-height: 600px;
+		min-width: 350px;
+		max-width: 370px;
+		background-color: white;
+		box-shadow: 0px 2px 13px 5px #00000038;
+		padding: 10px 10px;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		border-radius: 10px;
+	}
+
+	#form1 a {
+		color: black;
+		text-decoration: none;
+		transition-property: text-decoration, transform;
+		transition-duration: .25s;
+	}
+
+	#form1 a:hover {
+		transform: scale3d(1.01, 1.01, 1.01);
+		text-decoration: underline;
+	}
+
+	#form1 h1 {
+		color: black;
+		font-weight: 900;
+		font-size: xxx-large;
+		font-family: 'Cormorant Garamond', serif;
+	}
+
+	#form1 ul {
+		padding: 0;
+		margin: 0px 20px;
+		align-self: flex-start;
+	}
+
+	#form1 label {
+		color: black;
+		align-self: flex-start;
+		margin-left: 44px;
+	}
+
+	#form1 input#submit {
+		color: white;
+		background-image: none;
+		background-color: #407d17;
+		box-shadow: 8px 6px 12px 1px #00000045;
+		width: 330px;
+		height: auto;
+		font-weight: bold;
+		font-size: 20px;
+		transition-property: transform;
+		transition-duration: .25s; 
+	}
+
+	#form1 input#submit:hover {
+		background-color: #31b424;
+		transform: scale3d(1.1,1.1,1.1);
+	}
+
+	#form1 input#submit:active {
+		background-color: darkgreen;
+		box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+		transform: translateY(0);
+	}
+
+	#form1 input#rem {
+		width: 20px;
+		box-shadow: 0px 0px 0px 0px #00000000;
+	}
+
+	#form1 input#password {
+		width: 290px;
+		height: auto;
+		box-shadow: 8px 6px 12px 1px #00000045;
+		transition-property: transform;
+		transition-duration: .25s;
+		background-image: none;
+	}
+
+	#form1 input#username, input#email {
+		width: 290px;
+		height: auto;
+		box-shadow: 8px 6px 12px 1px #00000045;
+		transition-property: transform;
+		transition-duration: .25s; 
+		background-image: none;
+	}
+
+	#form1 input#username:hover, input#email:hover ,#form1 input#password:hover {
+		transform: scale3d(1.1,1.1,1.1);
+		background-color: lightgray;
+	}
+	#form1 input {
+		background-image: none;
+		padding: 15px 20px;
+		border-radius: 50px;
+		border-style: none;
+	}
+	div#cad {
+		background-image: none;
+		width: 100%;
+		margin-top: 100px;
+		min-height: 520px;
+		max-height: 1050px;
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	div#cad::after {
+		content: "";
+		background-repeat: no-repeat;
+		background-size: cover;
+		opacity: 0.5;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		position: absolute;
+		z-index: -1;
+	}
+
