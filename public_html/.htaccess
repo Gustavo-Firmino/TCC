@@ -1,0 +1,7 @@
+#Em desenvolvimento 1= mostra erros; em  producao = 0 
+php_value display_errors 0
+Allow from ::1
+#Para esperar o carregamento completo do buffer
+php_value output_buffering On
+#para caracteres especiais
+php_value output_handler mb_output_handler
