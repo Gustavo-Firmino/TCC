@@ -51,7 +51,11 @@ To run the project locally, follow these steps:
 
 Feel free to explore, contribute, and enhance the LibLab platform for a more inclusive and accessible approach to learning Libras.
 
-## PT-BR
+<br>
+<br>
+<br>
+
+**PT-BR**
 
 # TCC - LibLab
 
